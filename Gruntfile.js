@@ -14,8 +14,7 @@ module.exports = function(grunt) {
                 //}
                 files: [{
                     expand: true,
-                    cwd: 'less/',
-                    src: '*.less',
+                    src: ['less/*.less'],
                     dest: 'css',
                     ext: '.css'
                 }]
@@ -28,9 +27,8 @@ module.exports = function(grunt) {
             dev: {
                 files: [{
                     expand: true,
-                    cwd: 'css/',
-                    src: '*.css',
-                    dest: 'css/'
+                    src: ['css/*.css'],
+                    dest: 'css',
                 }]
             },
         }
