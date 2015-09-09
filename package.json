@@ -3,9 +3,20 @@
   "version": "0.0.0",
   "description": "Formation",
   "main": "index.html",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
+    "grunt-contrib-copy": "^0.8.1",
+    "grunt": "^0.4.5",
+    "grunt-contrib-uglify": "^0.9.2",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-cssmin": "^0.13.0",
+    "jit-grunt": "^0.9.1",
+    "grunt-autoprefixer": "^3.0.3",
+    "grunt-usemin": "^3.1.1",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-rev": "^0.1.0",
+    "grunt-contrib-less": "^1.0.1"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
