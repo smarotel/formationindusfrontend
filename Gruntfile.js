@@ -11,6 +11,10 @@ module.exports = function(grunt) {
             less:{
                 files: ['less/*.less'],
                 tasks: ['less-autoprefix']
+            },
+            typescript:{
+                files: ['ts/*.ts'],
+                tasks: ['typescript']
             }
         },
         less: {
@@ -57,8 +61,5 @@ module.exports = function(grunt) {
         'less:dev',
         'autoprefixer:dev'
     ]);
-    //grunt.registerTask('typescript', [
-    //    'typescript:dev'
-    //]);
 
 };
