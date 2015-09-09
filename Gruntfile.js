@@ -37,6 +37,17 @@ module.exports = function(grunt) {
                     src: ['css/*.css']
                 }]
             },
+        },
+        typescript: {
+            dev: {
+                src: ['ts/**/*.ts'],
+                dest: 'js',
+                options: {
+                    module: 'umd', //or commonjs
+                    target: 'es5', //or es3
+                    sourceMap: true,
+                }
+            }
         }
     });
 
@@ -46,4 +57,8 @@ module.exports = function(grunt) {
         'less:dev',
         'autoprefixer:dev'
     ]);
+    //grunt.registerTask('typescript', [
+    //    'typescript:dev'
+    //]);
+
 };
